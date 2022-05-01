@@ -9,4 +9,21 @@ import XCTest
 @testable import FizzBuzz
 
 class FizzBuzzTests: XCTestCase {
+    var subject: FizzBuzz!
+    
+    override func setUp() {
+        super.setUp()
+        subject = FizzBuzz()
+    }
+    
+    func test3を受け取った場合Fizzを返す() {
+        // arrange
+        let input = 3
+        
+        // act
+        let actual = subject.get(input: input)
+        
+        // assert
+        XCTAssertEqual(actual, "Fizz")
+    }
 }
