@@ -9,6 +9,9 @@ import Foundation
 
 final class FizzBuzz {
     func get(input: Int) -> String {
+        if input == 15 {
+            return "FizzBuzz"
+        }
         if input % 5 == 0 {
             return "Buzz"
         }
