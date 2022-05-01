@@ -9,7 +9,7 @@ import Foundation
 
 final class FizzBuzz {
     func get(input: Int) -> String {
-        if input == 5 {
+        if input % 5 == 0 {
             return "Buzz"
         }
         return "Fizz"
