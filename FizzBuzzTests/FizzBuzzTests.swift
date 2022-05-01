@@ -38,4 +38,14 @@ class FizzBuzzTests: XCTestCase {
         XCTAssertEqual(actual, "Buzz")
     }
     
+    func test6を受け取った場合Fizzを返す() {
+        // arrange
+        let input = 6
+        
+        // act
+        let actual = subject.get(input: input)
+        
+        // assert
+        XCTAssertEqual(actual, "Fizz")
+    }
 }
