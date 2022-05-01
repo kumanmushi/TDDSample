@@ -15,6 +15,9 @@ final class FizzBuzz {
         if input % 5 == 0 {
             return "Buzz"
         }
-        return "Fizz"
+        if input % 3 == 0 {
+            return "Fizz"
+        }
+        return String(input)
     }
 }
