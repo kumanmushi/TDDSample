@@ -70,4 +70,15 @@ class FizzBuzzTests: XCTestCase {
         // assert
         XCTAssertEqual(actual, "FizzBuzz")
     }
+    
+    func test30を受け取った場合にFizzBuzzを返す() {
+        // arrange
+        let input = 30
+        
+        // act
+        let actual = subject.get(input: input)
+        
+        // assert
+        XCTAssertEqual(actual, "FizzBuzz")
+    }
 }
