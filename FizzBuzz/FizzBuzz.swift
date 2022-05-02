@@ -9,15 +9,15 @@ import Foundation
 
 final class FizzBuzz {
     func get(input: Int) -> String {
-        if input % 15 == 0 {
-            return "FizzBuzz"
+        var output = ""
+        if input % 3 == 0 {
+            output += "Fizz"
         }
         if input % 5 == 0 {
-            return "Buzz"
+            output += "Buzz"
         }
-        if input % 3 == 0 {
-            return "Fizz"
-        }
-        return String(input)
+        return output.isEmpty
+        ? String(input)
+        : output
     }
 }
